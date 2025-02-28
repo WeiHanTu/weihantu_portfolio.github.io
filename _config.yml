@@ -1,0 +1,3 @@
+exclude:
+  - bin
+  - other-folders-you-dont-need
