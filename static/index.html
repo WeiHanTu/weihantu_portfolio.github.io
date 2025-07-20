@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Dimension by HTML5 UP</title>
+		<title>Wei-Han Tu's Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="./static/assets/css/main.css" />
@@ -56,68 +56,101 @@
 						  <span class="image main"><img src="./static/images/projects.jpg" alt="" /></span>
 						  <div class="projects">
 
-							<!-- Project 1: SmartBrain Front-End and Back-End -->
+							<!-- Project 1: Generative DnD Battlemaps -->
 							<div class="project">
-							  <h3>Smart Brain Front-End and Back-End</h3>
-							  <p><strong>Technologies:</strong> React, Node.js, Express, PostgreSQL, Clarifai API</p>
-							  <p><strong>Location:</strong> La Jolla, CA | <strong>Date:</strong> Feb. 2025</p>
+							  <h3>Generative DnD Battlemaps (Dungeon Coder)</h3>
+							  <p><strong>Technologies:</strong> React, Three.js, Python, Flask, LLMs, TRELLIS, Google Imagen, Computer Vision</p>
+							  <p><strong>Location:</strong> La Jolla, CA | <strong>Date:</strong> Jun. 2025</p>
 							  <p>
-								Engineered a cutting-edge facial recognition application for the ZTM course by developing a lightning-fast React UI (latency &lt; 1 second) and a robust Node.js/Express API managing 1,000+ daily requests. Integrated the Clarifai API to achieve an outstanding 95% detection accuracy.
+								Developed a full-stack web application for real-time D&D map generation, featuring an agentic LLM pipeline that combines procedural generation with user prompts to design custom dungeons.
 							  </p>
 							  <p>
-								<a href="https://github.com/WeiHanTu/smart_brain.git" target="_blank">View on GitHub</a> |
+								Engineered a custom image-to-3D asset pipeline using TRELLIS, Google Imagen, and GPT Image APIs, allowing users to create and import custom models into the Three.js environment.
+							  </p>
+							  <p>
+								Designed and implemented core UI functionalities, such as asset drag-and-drop placement and the 3D map component library, contributing to a seamless user experience.
+							  </p>
+							  <p>
+								<a href="https://github.com/WeiHanTu/ai-battlemaps.git" target="_blank">View on GitHub</a>
 							  </p>
 							</div>
 
-							<!-- Project 2: Expectimax for the 2048 Game -->
+							<!-- Project 2: Robotic Manipulation with Reinforcement Learning -->
 							<div class="project">
-							  <h3>Expectimax for the 2048 Game</h3>
-							  <p><strong>Technologies:</strong> Python, AI, Expectimax, MDP, Reinforcement Learning</p>
-							  <p><strong>Location:</strong> La Jolla | <strong>Date:</strong> Feb. 2025</p>
+							  <h3>Robotic Manipulation with Reinforcement Learning</h3>
+							  <p><strong>Technologies:</strong> Python, PyTorch, RL(PPO), ManiSkill2, SAPIEN Physics Engine</p>
+							  <p><strong>Location:</strong> La Jolla, CA | <strong>Date:</strong> Jun. 2025</p>
 							  <p>
-								Crafted an intelligent AI for the 2048 game using Expectimax, modeling the game as a Markov Decision Process and implementing precise heuristic evaluations (monotonicity, smoothness, corner preference) to boost performance—resulting in a remarkable 66% increase in average scores.
+								Designed and implemented PushCubeHitCube-v1, a novel robotics environment in ManiSkill2 for complex manipulation tasks where a Franka Emika Panda robot pushes one cube to hit another, extending the base PushCube environment with additional complexity and dense reward shaping.
 							  </p>
 							  <p>
-<!--								<a href="https://github.com/WeiHanTu/expectimax-2048.git" target="_blank">View on GitHub</a>-->
+								Engineered a complete PPO (Proximal Policy Optimization) implementation with actor-critic architecture, achieving >95% success rate and >90% explained variance over 3M training steps using 512 parallel environments and GPU acceleration.
+							  </p>
+							  <p>
+								Conducted systematic ablation studies across multiple random seeds (rs_05, rs_10, rs_20) to analyze reward scaling impact on sample efficiency and final performance, demonstrating robust learning across different initializations.
+							  </p>
+							  <p>
+								<a href="https://github.com/WeiHanTu/robotic-manipulation-rl.git" target="_blank">View on GitHub</a>
 							  </p>
 							</div>
 
-							<!-- Project 3: Development of an LLM-Powered Q&amp;A Application -->
+							<!-- Project 3: Multitask E-commerce Recommender System -->
 							<div class="project">
-							  <h3>Development of an LLM-Powered Q&amp;A Application</h3>
-							  <p><strong>Technologies:</strong> Python, LLMs, Streamlit, LangChain, OpenAI</p>
+							  <h3>Multitask E-commerce Recommender System</h3>
+							  <p><strong>Technologies:</strong> PyTorch, Multitask Learning, Recommender Systems, Pandas</p>
+							  <p><strong>Location:</strong> La Jolla, CA | <strong>Date:</strong> Dec. 2024</p>
+							  <p>
+								Developed a comprehensive multitask learning framework with Shared-Bottom architecture featuring task-specific output layers to jointly predict click-through rate (CTR) and conversion rate (CVR), leveraging correlated user-item interaction patterns for improved prediction accuracy.
+							  </p>
+							  <p>
+								Incorporated Clippy AdaGrad, a stabilized variant of AdaGrad with dual-threshold gradient clipping (λ_rel=0.5, λ_abs=1e-2), to address sparse feature gradients common in recommendation systems, resulting in 15-20% faster convergence and improved generalization across multiple architectures.
+							  </p>
+							  <p>
+								Evaluated on real-world AliExpress e-commerce dataset (500K training samples, 5K test samples) with 16 categorical and 6 numerical features, demonstrating consistent performance improvements: Achieved a final AUC-ROC of 0.7234/0.8156 on CTR/CVR prediction, respectively, outperforming single-task baselines.
+							  </p>
+							  <p>
+								<a href="https://github.com/WeiHanTu/Multitask_E-commerce_Recommender_System.git" target="_blank">View on GitHub</a>
+							  </p>
+							</div>
+
+							<!-- Project 4: Automated Fact-Checking with BERT -->
+							<div class="project">
+							  <h3>Automated Fact-Checking with BERT</h3>
+							  <p><strong>Technologies:</strong> Python, PyTorch, Hugging Face Transformers, Scikit-learn, NLP</p>
+							  <p><strong>Location:</strong> La Jolla, CA | <strong>Date:</strong> Dec. 2024</p>
+							  <p>
+								Fine-tuned BERT-based transformers (BERT-Base-Uncased, DistilBERT-Base-Uncased) on the WatClaimCheck dataset to classify factual claims as supported, refuted, or lacking evidence, leveraging domain-specific vocabulary to improve contextual understanding in scientific and news-related claims.
+							  </p>
+							  <p>
+								Addressed class imbalance using weighted cross-entropy loss and dynamic sampling, and stabilized training with a custom ClippyAdagrad optimizer for better convergence.
+							  </p>
+							  <p>
+								Implemented a custom data pipeline with Scikit-learn for preprocessing and stratified batching, and used confusion matrices, F-1 scores, and precision-recall curves to guide iterative model tuning.
+							  </p>
+							  <p>
+								Achieved a 45% improvement in F1-score over a TF-IDF + logistic regression baseline, and deployed the model as a Streamlit web app with user-friendly input/output to demonstrate real-time predictions.
+							  </p>
+							  <p>
+								<a href="https://github.com/WeiHanTu/Automated_Fact-Checking.git" target="_blank">View on GitHub</a>
+							  </p>
+							</div>
+
+							<!-- Project 5: LLM-Powered Q&A Application -->
+							<div class="project">
+							  <h3>LLM-Powered Q&A Application</h3>
+							  <p><strong>Technologies:</strong> Python, LangChain, OpenAI, Streamlit, FAISS</p>
 							  <p><strong>Location:</strong> Taiwan | <strong>Date:</strong> Nov. 2023</p>
 							  <p>
-								Pioneered an intelligent Q&amp;A application by harnessing large language models, reducing query response times by 30% and delivering answers in under 2 seconds with dynamic integration of LangChain and OpenAI.
+								Developed an end-to-end Retrieval-Augmented Generation (RAG) pipeline for querying PDF documents using natural language.
 							  </p>
 							  <p>
-								<a href="https://github.com/WeiHanTu/LLM-powered-Q-A-App.git" target="_blank">View on GitHub</a>
-							  </p>
-							</div>
-
-							<!-- Project 4: Official Biking and Trekking Website Redesign -->
-							<div class="project">
-							  <h3>Official Biking and Trekking Website Redesign</h3>
-							  <p><strong>Technologies:</strong> SpatiaLite, VirtualRouting, A* Search, UX Design</p>
-							  <p><strong>Location:</strong> Taiwan | <strong>Date:</strong> May 2024</p>
-							  <p>
-								Revamped the official biking and trekking website by enhancing user experience and implementing an advanced automatic route-planning feature. This initiative attracted over 340K new viewers, achieved through a collaborative effort with a team of 10, leveraging a SpatiaLite database integrated with VirtualRouting analysis and an A* search algorithm.
+								Built a modular workflow with LangChain. Leveraging OpenAI embeddings and FAISS for vector search and efficient retrieval.
 							  </p>
 							  <p>
-								<a href="https://taiwanbike.tw/en" target="_blank">View on Official Website</a>
-							  </p>
-							</div>
-
-							<!-- Project 5: Urban Wind Pattern Analysis and Microclimate Improvement -->
-							<div class="project">
-							  <h3>Urban Wind Pattern Analysis and Microclimate Improvement</h3>
-							  <p><strong>Technologies:</strong> CFD, AutoCAD, PHOENICS, SketchUp</p>
-							  <p><strong>Location:</strong> Taiwan | <strong>Date:</strong> Apr. 2018</p>
-							  <p>
-								Conceptualized and virtualized strategic ventilation corridors to enhance microclimate conditions over a 30,000 km² area, achieving a 30% improvement. Utilized advanced CFD, AutoCAD, PHOENICS, and SketchUp to analyze wind patterns and counter Urban Heat Island effects—earning a Top 3 Graduation Project award.
+								Deployed an interactive Streamlit interface that reduced average response time by 30%, delivering answers in under 2 seconds.
 							  </p>
 							  <p>
-								<a href="https://github.com/WeiHanTu/Urban-Wind-Pattern-Analysis.git" target="_blank">View on GitHub</a>
+								<a href="https://github.com/WeiHanTu/LLM-powered-QA-App.git" target="_blank">View on GitHub</a>
 							  </p>
 							</div>
 
