@@ -303,7 +303,7 @@ public
 # Storybook build outputs
 .out
 .storybook-out
-
+pyany_index.html
 # Temporary folders
 tmp/
 temp/ 
