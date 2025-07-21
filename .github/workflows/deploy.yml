@@ -39,6 +39,15 @@ jobs:
       run: |
         python -c "from app import app; print('Flask app imported successfully')"
         
+    - name: Verify static files
+      run: |
+        echo "Checking static files..."
+        ls -la static/
+        echo "Checking index.html exists..."
+        test -f static/index.html && echo "✅ index.html found" || echo "❌ index.html missing"
+        echo "Checking .nojekyll exists..."
+        test -f static/.nojekyll && echo "✅ .nojekyll found" || echo "❌ .nojekyll missing"
+        
     - name: Setup Pages
       uses: actions/configure-pages@v4
       

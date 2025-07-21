@@ -1,0 +1,33 @@
+# GitHub Pages Configuration
+# This file configures how GitHub Pages builds the site
+
+# Disable Jekyll processing for static sites
+plugins: []
+
+# Set the theme to none since we're using custom HTML
+theme: null
+
+# Disable Jekyll's default processing
+markdown: kramdown
+highlighter: rouge
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - LICENSE.txt
+  - requirements.txt
+  - app.py
+  - deploy.py
+  - test_app.py
+  - .gitignore
+  - .github/
+  - bin/
+  - include/
+  - lib/
+  - pyvenv.cfg
+
+# Include only necessary files
+include:
+  - assets/
+  - images/
+  - index.html 
